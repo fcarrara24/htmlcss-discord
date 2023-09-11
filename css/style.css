@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
+
 
 :root {
 	--color-purple: #7289da;
@@ -33,13 +35,12 @@
 }
 
 button{
+    
+    border: 0;
     background-color: var(--color-white);
     color: var(--color-purple);
     text-align: center;
-
-
-    height: 40px;
-    width: 80px;
+    padding: 15px;
     border-radius: 12px;
 }
 
@@ -48,9 +49,7 @@ header{
     background-color: var(--color-blue);
 }
 
-header  nav{
-    display: flex;
-}
+
 ul{
     list-style: none;
     
@@ -67,13 +66,14 @@ a{
     text-decoration: none;
 }
 
+/* header content */
 h1{
     margin: 20px 0;
     font-size: 3em;
 }
 
 #header-content{
-    
+    color: var(--color-white);
     background-image: url('../img/jumbo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,12 +85,12 @@ h1{
     max-width: 800px;
     padding: 80px 20px;
     text-align: center;
-    background-color: red;
+    
 }
 
 .flex-btn{
-    margin: 20px;
-    justify-content: center;
+    margin: 20px 90px;
+    justify-content: space-evenly;
 }
 
 /* footer */
@@ -100,4 +100,16 @@ footer{
 
 li{
     color: var(--color-white);
+}
+
+img{
+    display: inline-bolck;
+    width: 33vw;
+    height: auto;
+}
+
+
+/* da togliere */
+main>section{
+    height:100vh;
 }

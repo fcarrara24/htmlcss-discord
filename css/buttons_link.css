@@ -1,0 +1,43 @@
+
+/* buttons */
+button{
+
+    border: 0;
+
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.white-btn{
+    font-weight: bolder;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+    
+.black-btn{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.blue-btn{
+    background-color: var(--color-blue);
+    color: var(--color-grey);
+}
+
+.purple-btn{
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+/* link */
+a{
+    font-weight: 600;
+    color:var(--color-white);
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

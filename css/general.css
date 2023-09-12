@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Noto Sans Symbols', sans-serif;
+
+}
+
+
+:root {
+	--color-purple: #7289da;
+	--color-blue: #255ee9;
+	--color-grey: #f6f6f6;
+	--color-black: #23272a;
+	--color-white: #ffffff;
+}
+.debug{
+
+    border: 1px solid black;
+
+} 
+
+.container{
+    max-width: 1200px;
+    /* centratura */
+    margin: 0 auto;
+    padding: 5px;
+}

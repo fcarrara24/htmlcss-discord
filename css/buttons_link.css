@@ -8,6 +8,13 @@ button{
     border-radius: 50px;
 }
 
+button:hover{
+    color: var(--color-blue);
+    /* mettendo 2 shadow diverse gli do più layers di ombreggiatura */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
 .white-btn{
     font-weight: bolder;
     background-color: var(--color-white);
@@ -40,4 +47,6 @@ a{
 
 a:hover{
     text-decoration: underline;
+    
+      
 }

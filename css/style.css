@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-size: 20px;
+    font-family: 'Noto Sans Symbols', sans-serif;
+
 }
 
 
@@ -31,18 +32,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+
+.justify-between{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.align-center{
     align-items: center;
     align-content: center;
 }
-
 button{
     
     border: 0;
-    background-color: var(--color-white);
-    color: var(--color-purple);
-    text-align: center;
-    padding: 15px;
-    border-radius: 12px;
+    
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 /* content */
@@ -61,16 +67,25 @@ li{
 }
 
 a{
+    font-weight: 600;
     color:var(--color-white);
     display: block;
     padding: 6px 10px;
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 /* header content */
 h1{
-    margin: 20px 0;
-    font-size: 3em;
+    padding: 15px 0;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.8em;
+    padding: 10px 0;
 }
 
 #header-content{
@@ -109,9 +124,7 @@ li{
 
 
 /* da togliere */
-main>section{
-    height:100vh;
-}
+
 
 .immagine{
     width: 20%;
@@ -167,10 +180,65 @@ main>section{
 }
 
 .main_description{
-    width: 30%;
-    font-size: 1.5em;
+    
+    font-size: 2em;
     color: var(--color-purple);
 }
 .category{
     color: var(--color-purple);
+}
+
+.even{
+    background-color: var(--color-grey);
+}
+
+.odd{
+    background-color: var(--color-white);
+}
+
+.section-text{
+    width: 40%;
+    padding: 30px 10px;
+}
+
+.section-image{
+    width: 60%;
+}
+
+/* per adattare la dimensione dell'immagine a qiuella del conteitore */
+main img{
+    width: 100%;
+    /* per fare in modo che l'elemeto nmon superi le sue dimensioni originali ( per non perdere qualita) */
+    max-width: 100%;
+}
+
+.reverse{
+    
+    flex-flow: row-reverse wrap;
+}
+
+.wave img{
+    display: block;
+    opacity: 0.03;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.section-text.last{
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.section-image.last{
+    width: 100%;
+}
+
+.starred h4{
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+    
 }
